@@ -1,6 +1,6 @@
 {
   "name": "get-state-iso2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "Harsh Srivastava",
   "description": "Get the state in ISO3166-2 format based on Country & Zipcode",
@@ -11,13 +11,13 @@
     "test": "npm run build:test && mocha --timeout 40000 ./tests/dist/**/*.test.js",
     "build:test": "npm run clean:test && copyfiles ./data ./tests/data && tsc -p ./tests",
     "clean:test": "rm -rf ./tests/dist",
-    "prepublish": "tsc"
+    "prepare": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/harsh-sri/get-state-iso-3166-2"
   },
-  "keywords": [],
+  "keywords": ["get-state", "get-state-in-iso", "iso-3166-2", "zipcode", "get-state-from-zipcode", "state-from-pincode", "state-in-iso"],
   "bugs": {
     "url": "https://github.com/harsh-sri/get-state-iso-3166-2/issues"
   },
