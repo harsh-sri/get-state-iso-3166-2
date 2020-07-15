@@ -7,10 +7,10 @@
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
   "scripts": {
-    "build": "rm -rf ./dist && webpack",
-    "test": "npm run build:test && mocha --timeout 40000 ./tests/dist/**/*.test.js",
-    "build:test": "npm run clean:test && copyfiles ./data ./tests/data && tsc -p ./tests",
-    "clean:test": "rm -rf ./tests/dist",
+    "build": "tsc",
+    "test": "npm run build:test && mocha --timeout 40000 ./dist/**/*.test.js && npm run clean:test",
+    "build:test": "npm run clean:test && tsc -p ./tests",
+    "clean:test": "rm -rf ./dist",
     "prepare": "tsc"
   },
   "repository": {
