@@ -1,5 +1,5 @@
 import * as papa from 'papaparse';
-import * as admZip from 'adm-zip';
+import * as AdmZip from 'adm-zip';
 import * as fs from 'fs';
 import * as path from 'path';
 // Interfaces
@@ -30,7 +30,7 @@ export default class ZipUtil {
         this.config = config;
         if(!fs.existsSync(this.allCountriesFilePath)) {
             console.log('----- FILE DOES NOT EXISTS -----');
-            const admZ = new admZip(this.allCountriesZipFilePath);
+            const admZ = new AdmZip(this.allCountriesZipFilePath);
             const zipEntries = admZ.getEntries(); // an array of ZipEntry records
             const self = this;
             zipEntries.forEach(function(zipEntry) {
