@@ -1,7 +1,8 @@
 {
   "name": "get-state-iso2",
-  "version": "1.0.1-rc6",
-  "license": "ISC",
+  "version": "1.0.2",
+  "license": "MIT",
+  "author": "Harsh Srivastava",
   "description": "Get the state in ISO3166-2 format based on Country & Zipcode",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
@@ -12,6 +13,15 @@
     "clean:test": "rm -rf ./tests/dist",
     "prepublish": "tsc"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh-sri/get-state-iso-3166-2"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/harsh-sri/get-state-iso-3166-2/issues"
+  },
+  "homepage": "https://github.com/harsh-sri/get-state-iso-3166-2/issues",
   "devDependencies": {
     "@types/adm-zip": "0.4.33",
     "@types/chai": "4.2.11",
@@ -21,17 +31,10 @@
     "chai": "4.2.0",
     "mocha": "8.0.1",
     "path": "0.12.7",
-    "reflect-metadata": "0.1.13",
-    "ts-loader": "8.0.0",
-    "ts-node": "8.10.2",
-    "typescript": "3.9.6",
-    "webpack": "4.43.0",
-    "webpack-cli": "3.3.12",
-    "webpack-node-externals": "2.3.0"
+    "typescript": "3.9.6"
   },
   "dependencies": {
     "adm-zip": "0.4.16",
-    "copy-webpack-plugin": "6.0.3",
     "papaparse": "5.2.0"
   }
 }

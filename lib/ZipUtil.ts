@@ -28,7 +28,6 @@ export default class ZipUtil {
     private store: any;
     private constructor(config: IConfig){
         this.config = config;
-        console.log(this.allCountriesZipFilePath);
         if(!fs.existsSync(this.allCountriesFilePath)) {
             console.log('----- FILE DOES NOT EXISTS -----');
             const admZ = new admZip(this.allCountriesZipFilePath);
